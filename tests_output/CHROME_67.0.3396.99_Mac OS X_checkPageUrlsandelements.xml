@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="checkPageUrlsandelements"
+    errors="0" failures="0" hostname="" id="" package="checkPageUrlsandelements" skipped="0"
+    tests="2" time="19.23" timestamp="Sun, 22 Jul 2018 21:43:25 GMT">
+  
+    <testcase name="test login" classname="checkPageUrlsandelements" time="7.382" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="check URLs on pages" classname="checkPageUrlsandelements" time="11.85" assertions="21">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

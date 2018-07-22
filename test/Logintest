@@ -1,0 +1,35 @@
+var login ={
+    username: "daniel@dflanagan.com",
+    password: "3punchman"
+}
+//let pageObject = {}
+var pageObject = {}
+module.exports = {
+    before: browser => {
+       //browser.url('https://cards.devclock.com/')
+        pageObject = browser.page.pageObject()
+        pageObject.navigate()
+        .waitForElementVisible('@loginTab', 10000)
+    },
+    after: browser => {
+        browser.end()
+    },
+'test login' : browser => {
+    //Enter username
+    pageObject.setValue('@emailIn', 'daniel@dflanagan.com')
+    //Enter password
+    pageObject.setValue('@password', '3punchman')
+    //click Login
+    browser.useXpath()
+    pageObject.click('@loginBut')
+    browser.pause(5000)
+    browser.useCss()
+    //should be logged in
+    pageObject.waitForElementVisible('@decksIco', 10000)
+}
+
+
+
+
+
+}
